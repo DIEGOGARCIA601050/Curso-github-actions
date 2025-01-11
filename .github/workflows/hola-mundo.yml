@@ -1,0 +1,16 @@
+name: hola-amiguitos
+on: push
+jobs:
+  hola-amiguitos:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+          
+      - name: Ejecutar script
+        run: node hola-amiguitos.js

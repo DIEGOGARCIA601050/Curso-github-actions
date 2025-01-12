@@ -1,4 +1,5 @@
 name: hola-amiguitos
+run-name: saludando
 on: push
 jobs:
   hola-amiguitos:

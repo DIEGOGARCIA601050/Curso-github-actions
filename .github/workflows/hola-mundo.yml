@@ -14,4 +14,4 @@ jobs:
           node-version: '20'
           
       - name: Ejecutar script
-        run: node hola-amiguitos.js
+        run: node hola.js

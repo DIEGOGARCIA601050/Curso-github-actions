@@ -1,4 +1,5 @@
 name: triggers
+run-name: actualizarYnotificar
 on:
   schedule:
     - cron: '0 17 * * 1'

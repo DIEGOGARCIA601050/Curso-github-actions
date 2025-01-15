@@ -2,9 +2,16 @@ name: triggers
 on:
   schedule:
     - cron: '0 17 * * 1'
+  pull_request:
 jobs:
   buscarCambios:
     runs-on: ubuntu-latest
     steps:
       - name: haciendo Pull
         run: git pull origin main
+
+  alertarDeCambios:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Alertar De Cambios
+        run: echo "Nuevos cambios agregados al repositorio"

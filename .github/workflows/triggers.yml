@@ -1,0 +1,10 @@
+name: triggers
+on:
+  schedule:
+    - cron: '0 17 * * 1'
+jobs:
+  buscarCambios:
+    runs-on: ubuntu-latest
+    steps:
+      - name: haciendo Pull
+        run: git pull origin main
